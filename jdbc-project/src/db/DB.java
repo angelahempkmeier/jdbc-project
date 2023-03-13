@@ -33,7 +33,7 @@ public class DB {
     }
 
     private static Properties loadProperties(){
-        try(FileInputStream fs = new FileInputStream("db.properties")){
+        try(FileInputStream fs = new FileInputStream("jdbc-project/db.properties")){
             Properties prop = new Properties();
             prop.load(fs);
             return prop;
